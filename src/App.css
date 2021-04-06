@@ -1,0 +1,72 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+.appBody {
+	display: flex;
+	flex-direction: column;
+}
+
+.appBody__Header {
+	display: flex;
+	flex-direction: row;
+	padding-left: 42%;
+	position: sticky;
+	background: rgb(255, 255, 255);
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.13), 1px 2px 2px rgba(0, 0, 0, 0.1),
+		-1px -2px 2px rgba(0, 0, 0, 0.05);
+	margin: 10px;
+	border-radius: 20px;
+}
+
+@media only screen and (max-width: 1500px) {
+	.appBody__Header {
+		padding-left: 38%;
+	}
+}
+@media only screen and (max-width: 900px) {
+	.appBody__Header {
+		padding-left: 25%;
+	}
+}
+@media only screen and (max-width: 676px) {
+	.appBody__Header {
+		padding-left: 28%;
+	}
+}
+
+.appBody__Header > button {
+	margin-left: auto;
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 10px;
+	align-items: center;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	background: rgb(255, 57, 57);
+}
+
+.appBody__Header > button:hover {
+	background-color: rgb(255, 108, 108);
+	color: azure;
+}
+
+.appBody__Header > p {
+	font-weight: 500;
+	color: rgb(255, 56, 56);
+}
+
+.appBody__Header > p > span {
+	font-weight: bold;
+}
